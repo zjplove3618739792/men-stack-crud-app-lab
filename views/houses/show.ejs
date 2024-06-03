@@ -12,7 +12,12 @@
     <% } else { %>
       <p>This house is not ready to Book!</p>
     <% } %>
+    <form action="/houses/<%=house._id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= house.name %></button>
+      </form>
+      <a href="/houses/<%= house._id %>/edit">Edit <%= house.name %></a>
+      <a href="/houses">Back to Houses</a>
   </body>
-  <a href="/Houses/">Back to Houses</a>
+  
 
 </html>
