@@ -21,7 +21,7 @@ mongoose.connection.on("connected", () => {
 const House = require('./models/house.js');
 
 app.get("/", async (req, res) => {
-  res.render("index.ejs");
+  res.render("landing.ejs");
 });
 
 app.get("/houses", async (req, res) => {
