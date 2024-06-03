@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= house.name %></title> 
+  </head>
+  <body>
+    <h1><%= house.name %></h1>
+    <% if (house.isReadyToBook) { %>
+      <p>This house is ready to Book!</p>
+    <% } else { %>
+      <p>This house is not ready to Book!</p>
+    <% } %>
+  </body>
+  <a href="/Houses/">Back to Houses</a>
+
+</html>

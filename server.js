@@ -42,10 +42,9 @@ app.post("/houses", async (req, res) => {
   res.redirect("/houses");
 });
 
-app.get("/houses/:houseId", (req, res) => {
-  res.send(
-    `This route renders the show page for house id: ${req.params.houseId}!`
-  );
+app.get("/houses/:houseId", async (req, res) => {
+  const foundHouse = await House.findById(req.params.houseId);
+  res.render("houses/show.ejs", { house: foundHouse });
 });
 
 
