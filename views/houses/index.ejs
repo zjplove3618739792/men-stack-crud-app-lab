@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houses Index</title>
+  </head>
+<body>
+    <h1>All Houses</h1>
+    <ul>
+      <% houses.forEach(house => { %>
+        <li>
+            <a href="/houses/<%= house._id %>"> <%= house.name %> </a>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+  
+
+  
+<a href="/houses/new">Add New House</a>
+
+</html>

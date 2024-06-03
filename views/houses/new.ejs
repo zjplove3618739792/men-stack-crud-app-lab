@@ -1,0 +1,24 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a House</title>
+  </head>
+    <body>
+        <h1>Create a New Booking!</h1>
+        <form action="/houses" method="POST">
+        <label for="name">Name:</label>
+         <input type="text" name="name" id="name" />
+  
+         <label for="isReadyToBook">Ready to Book?</label>
+        <input type="checkbox" name="isReadyToBook" id="isReadyToBook" />
+  
+         <button type="submit">Add Booking</button>
+        </form>
+     </body>
+<a href="/fruits/new">Add New Fruit</a>
+
+</html>
